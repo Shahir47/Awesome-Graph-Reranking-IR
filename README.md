@@ -7,3 +7,6 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond
 
 ## 🌳 Taxonomy
 ![Taxonomy](./assets/taxonomy.png)
+
+## 🧭 Timeline
+![Timeline](./assets/timeline.png)
