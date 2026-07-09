@@ -13,3 +13,13 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond
 
 ## 🧭 Timeline
 ![Timeline](./assets/timeline.png)
+
+** ⭐ Citation
+If you find this work helpful in your research, please consider citing our work.
+```@article{zaoad2025graph,
+  title={Graph-based re-ranking: Emerging techniques, limitations, and opportunities},
+  author={Zaoad, Md Shahir and Zawad, Niamat and Ranade, Priyanka and Krogman, Richard and Khan, Latifur and Holt, James},
+  journal={arXiv preprint arXiv:2503.14802},
+  year={2025}
+}
+```
