@@ -27,7 +27,7 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond.
 |KG-FiD|[KG-FiD: Infusing Knowledge Graph in Fusion-in-Decoder for Open-Domain Question Answering](https://aclanthology.org/2022.acl-long.340/)|2022||
 ||[Efficient and Accurate Contextual Re-Ranking for Knowledge Graph Question Answering](https://aclanthology.org/2024.lrec-main.496/)|2024||
 |Q-KGR|[Question-guided Knowledge Graph Re-scoring and Injection for Knowledge Graph Question Answering](https://aclanthology.org/2024.findings-emnlp.524/)|2024|[GitHub](https://github.com/EchoDreamer/Q-KGR)|
-|TimeR4|[TimeR4 : Time-aware Retrieval-Augmented Large Language Models for Temporal Knowledge Graph Question Answering](https://aclanthology.org/2024.emnlp-main.394/)|2024]|[GitHub](https://github.com/qianxinying/TimeR4)|
+|TimeR4|[TimeR4 : Time-aware Retrieval-Augmented Large Language Models for Temporal Knowledge Graph Question Answering](https://aclanthology.org/2024.emnlp-main.394/)|2024|[GitHub](https://github.com/qianxinying/TimeR4)|
 ||[Learning to Retrieve Reasoning Paths over Wikipedia Graph for Question Answering](https://arxiv.org/abs/1911.10470)|2019|[GitHub](https://github.com/AkariAsai/learning_to_retrieve_reasoning_paths)|
 |IDRQA|[Answering Any-hop Open-domain Questions with Iterative Document Reranking](https://arxiv.org/abs/2009.07465)|2021||
 
