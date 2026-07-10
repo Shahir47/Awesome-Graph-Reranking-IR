@@ -8,6 +8,7 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond
 ## 🚀 Related Work from Our Group
 [Density2R](https://ieeexplore.ieee.org/document/11401587), an efficient zero-shot document re-ranking method for information retrieval, RAG, and LLM-based reranking, published at IEEE BigData 2025.
 > It is a lightweight zero-shot document re-ranking method that uses embedding density over LLM parametric knowledge to reduce token cost and latency for RAG and information retrieval pipelines.
+
 🔗 GitHub: [Density2R_GitHub](https://github.com/Shahir47/Density2R)
 
 ## 📝 ABSTRACT
