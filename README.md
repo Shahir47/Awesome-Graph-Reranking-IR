@@ -1,5 +1,5 @@
 # Awesome-Graph-Reranking-IR
-A curated list of papers on graph-based re-ranking methods in IR and Beyond
+A curated list of papers on graph-based re-ranking methods in IR and Beyond.
 
 ## 🔥 NEWS
 * Coming Soon: Release of **V2**
@@ -19,6 +19,23 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond
 
 ## 🧭 TIMELINE
 ![Timeline](./assets/timeline.png)
+
+
+## Question-Answering
+| Model | Paper | Date | Resources |
+|---|---|---|---|
+
+## General Information Retrieval
+| Model | Paper | Date | Resources |
+|---|---|---|---|
+
+## RAG 
+| Model | Paper | Date | Resources |
+|---|---|---|---|
+
+## Auxiliary & Specialized Tasks
+| Model | Paper | Date | Resources |
+|---|---|---|---|
 
 ## ⭐ CITATION
 If you find this work helpful in your research, please consider citing our work.
