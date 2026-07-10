@@ -23,6 +23,7 @@ A curated list of papers on graph-based re-ranking methods in IR and Beyond.
 
 ## Question-Answering
 | Model | Paper | Date | Resources |
+|---|---|---|---|
 |KG-FiD|KG-FiD: Infusing Knowledge Graph in Fusion-in-Decoder for Open-Domain Question Answering|2022||
 ||Efficient and Accurate Contextual Re-Ranking for Knowledge Graph Question Answering|2024||
 |Q-KGR|Question-guided Knowledge Graph Re-scoring and Injection for Knowledge Graph Question Answering|2024|[Code-GitHub](https://github.com/EchoDreamer/Q-KGR)|
