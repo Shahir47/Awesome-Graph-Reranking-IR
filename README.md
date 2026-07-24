@@ -6,6 +6,8 @@ Graph-based methods for reordering retrieved documents across information retrie
 - [General Information Retrieval](#general-information-retrieval)
 - [Retrieval-Augmented Generation](#retrieval-augmented-generation)
 - [Auxiliary and Specialized Tasks](#auxiliary-and-specialized-tasks)
+- [Datasets](#-datasets)
+- [Learning Paradigms](#-learning-paradigms)
 
 ## 🔥 NEWS
 * Coming Soon: Release of **V2**
@@ -21,13 +23,16 @@ Graph-based methods for reordering retrieved documents across information retrie
 (**V2**) The two-stage information retrieval (IR) framework, also known as the retrieve-then-re-rank pipeline, has empowered numerous AI paradigms, including retrieval-augmented generation (RAG) and question-answering (QA) systems that leverage ad hoc knowledge to address the rapidly expanding information landscape. In this setting, graph structures have emerged as a promising mechanism for context augmentation, further enhancing re-ranking frameworks through structured relational modeling, semantic dependency representation, and adaptive retrieval strategies. Consequently, graph representation learning techniques have been actively explored alongside leading IR paradigms. Despite increased research interest in graph-based re-ranking methods, a comprehensive study that connects existing approaches and provides a clear overview of this paradigm remains absent. In this survey, we provide an in-depth review of graph-based re-ranking models, tracing their history, evolution, and state-of-the-art development. To facilitate a clear understanding of this paradigm, we introduce an intuitive taxonomy that organizes graph-based re-ranking models by application domain and methodological characteristics. We also present a chronological timeline that illustrates the evolution of graph-based re-ranking methods. In addition, we analyze the experimental setups of representative studies and provide detailed insight into their findings. We conclude by providing recommendations on future research based on community-wide challenges and opportunities.
 
 ## 🌳 TAXONOMY
+This taxonomy organizes graph-based re-ranking methods into four application areas: General Information Retrieval, Question Answering, Retrieval-Augmented Generation, and Auxiliary and Specialized Tasks. General IR is further categorized by methodology, including heuristic and centrality-based methods, adaptive corpus-graph traversal, entity-centric approaches, domain-specific methods, and other specialized graph designs. QA methods are grouped by task setting: open-domain, knowledge-graph, temporal knowledge-graph, and multi-hop question answering. The auxiliary category covers related tasks such as answer sentence selection, semantic parsing, entity re-ranking, and term re-ranking. This structure provides a clear overview of how graph-based techniques map to different re-ranking problems.
 ![Taxonomy](./assets/taxonomy.png)
 
 ## 🧭 TIMELINE
+The timeline illustrates the evolution of graph-based re-ranking from 2008 to the present across the four taxonomy categories. Its spacing reflects publication density, giving greater emphasis to the field’s rapid recent growth. Early work focused on general IR, using similarity graphs and centrality measures such as PageRank to rescore documents. During the 2010s, researchers increasingly incorporated entities, knowledge graphs, and neural ranking models, while graph-based re-ranking expanded into question answering. More recent work emphasizes adaptive candidate expansion through corpus graphs, integration with pretrained and large language models, and emerging applications in RAG pipelines.
 ![Timeline](./assets/timeline.png)
 
-
 ## Question-Answering
+Graph-based re-ranking in QA selects the passages, facts, triples, or evidence paths most useful for producing an answer. Graphs help connect related pieces of evidence, remove irrelevant knowledge, preserve temporal consistency, and support reasoning across multiple documents. The category covers open-domain QA, knowledge-graph QA, temporal knowledge-graph QA, and multi-hop QA, each of which uses a different form of graph structure to organize and prioritize evidence.
+
 | Model | Paper | Venue | Date | Resources |
 |---|---|---|---|---|
 |KG-FiD|[KG-FiD: Infusing Knowledge Graph in Fusion-in-Decoder for Open-Domain Question Answering](https://aclanthology.org/2022.acl-long.340/)|ACL|2022||
@@ -38,6 +43,8 @@ Graph-based methods for reordering retrieved documents across information retrie
 |IDRQA|[Answering Any-hop Open-domain Questions with Iterative Document Reranking](https://arxiv.org/abs/2009.07465)|SIGIR|2021||
 
 ## General Information Retrieval
+This category covers graph-based methods for improving the ranking of documents or passages in conventional search systems. These approaches use graph signals in several ways: applying centrality-based algorithms, exploring corpus graphs to recover relevant documents missed by the initial retriever, enriching representations with knowledge-graph entities, and modeling relationships among candidates. It includes traditional and heuristic models, adaptive re-ranking, entity-centric methods, domain-specific approaches, and other specialized graph designs.
+
 | Model | Paper | Venue | Date | Resources |
 |---|---|---|---|---|
 ||[Re-Ranking Search Results Using Document-Passage Graphs](https://dl.acm.org/doi/10.1145/1390334.1390539)|SIGIR|2008||
@@ -79,6 +86,8 @@ Graph-based methods for reordering retrieved documents across information retrie
 |PRP-Graph|[PRP-Graph: Pairwise Ranking Prompting to LLMs with Graph Aggregation for Effective Text Re-ranking](https://aclanthology.org/2024.acl-long.313/)|ACL|2024|[GitHub](https://github.com/Memelank/PRP-Graph)|
 
 ## Retrieval-Augmented Generation
+In RAG, graph-based re-ranking filters retrieved evidence before it is supplied to a language model, helping ground generation in more relevant and reliable information. Methods may construct graphs over documents, passages, entities, or semantic representations to capture relationships that independent relevance scoring can overlook. Graph neural networks, semantic graphs, and diffusion-based ranking can then promote mutually supporting evidence while suppressing noisy or redundant context.
+
 | Model | Paper | Venue | Date | Resources |
 |---|---|---|---|---|
 |G-RAG|[Don't Forget to Connect! Improving RAG with Graph-based Reranking](https://arxiv.org/abs/2405.18414)|Preprint|2024||
@@ -86,6 +95,8 @@ Graph-based methods for reordering retrieved documents across information retrie
 |Diffusion-Aided RAG|[Diffusion-Aided RAG: Elevating Dense-Retrieval Chatbots via Graph-Based Diffusion Reranking](https://aclanthology.org/2025.clicit-1.36/)|CLiC|2025|[GitHub](https://github.com/sai0499/Diffusion-Page-Reranking-aided-Dense-Retrieval-for-RAG-)|
 
 ## Auxiliary and Specialized Tasks
+This category extends graph-based re-ranking beyond full documents and passages to more specialized candidate types. It includes answer sentence selection, where individual answer candidates are ranked; semantic parsing, where candidate logical forms are evaluated using their structural relationships; entity re-ranking, where entities are prioritized using graph connections and textual context; and term re-ranking, where domain-relevant terms are identified through graph-based importance signals.
+
 | Model | Paper | Venue | Date | Resources |
 |---|---|---|---|---|
 |EQAG-GNN|[Question-Answer Sentence Graph for Joint Modeling Answer Selection](https://aclanthology.org/2023.eacl-main.68/)|EACL|2023||
@@ -94,6 +105,35 @@ Graph-based methods for reordering retrieved documents across information retrie
 |GTCV|[Graph-Based Transformer with Cross-Candidate Verification for Semantic Parsing](https://ojs.aaai.org/index.php/AAAI/article/view/6408)|AAAI|2020||
 |ENT Rank|[ENT Rank: Retrieving entities for topical information needs through entity-neighbor-text relations](https://dl.acm.org/doi/10.1145/3331184.3331257)|SIGIR|2019|[GitHub](https://github.com/TREMA-UNH/ENT-rank)|
 |Term Ranker|[Term Ranker: A Graph-Based Re-Ranking Approach](https://aaai.org/papers/310-flairs-2016-12917/)|AAAI|2016||
+
+## 📊 DATASETS
+The datasets used to evaluate graph-based re-ranking across IR, QA, RAG, and specialized tasks, providing a quick overview of the benchmark resources adopted by different studies.
+
+| Dataset | #Corpus | #Queries | Relevance Level | Usage |
+|---|---|---|---|---|
+|[MSMARCO Passage Ranking](https://microsoft.github.io/msmarco/Datasets)|8.8M|809k|Binary|Train|
+|[MSMARCO Passage Ranking v2](https://microsoft.github.io/msmarco/Datasets)|138M|277K|Binary|Train|
+|[MSMARCO Dev (small)](https://microsoft.github.io/msmarco/Datasets)|8.8M|6,980|Binary|Test|
+|[TREC DL19 (judged)](https://trec.nist.gov/data/deep2019.html)|8.8M|43|4-level|Test|
+|[TREC DL20 (judged)](https://trec.nist.gov/data/deep2020.html)|8.8M|54|4-level|Test|
+|[TREC DL21 (judged)](https://trec.nist.gov/data/deep2021.html)|138M|53|4-level|Test|
+|[TREC DL22 (judged)](https://trec.nist.gov/data/deep2022.html)|138M|76|4-level|Test|
+|[TREC DL Hard](https://ir-datasets.com/trec-dl-hard.html)|8.8M|50|4-level|Test|
+|[TREC Robust04](https://trec.nist.gov/data/robust/04.guidelines.html)|528K|250|3-level|Test|
+|[TREC News 2021](https://trec.nist.gov/data/news2021.html)|728,626|51|5-level|Test|
+|[TREC CORE 2018](https://github.com/trec-core/2018)|595K|50|3-level|Test|
+|[TREC COVID](https://ir.nist.gov/covidSubmit/index.html)|171,332|50|3-level|Test|
+|[CODEC](https://github.com/grill-lab/CODEC)|729,824|42|4-level|Test|
+|[Ohsumed](https://ir-datasets.com/ohsumed.html)|348,566|106|3-level|Test|
+|[ClueWeb09](https://lemurproject.org/clueweb09/)|1B|200|3-level/6-level|Test|
+|[ClueWeb12](https://lemurproject.org/clueweb12/)|733M|100|6-level|Test|
+|[TREC8](https://ir-datasets.com/disks45.html)|528K|50|Binary|Test|
+|TREC AP|242,918|99|Binary|-|
+|TREC WSJ|173,252|50|Binary|-|
+
+## 🎓 LEARNING PARADIGMS
+The learning paradigms used to develop graph-based re-rankers include supervised learning, ad-hoc methods, supervised fine-tuning, zero-shot, unsupervised, online, and weakly supervised learning.
+![Timeline](./assets/learning_paradigm.png)
 
 ## ⭐ CITATION
 If you find this work helpful in your research, please consider citing our work.
