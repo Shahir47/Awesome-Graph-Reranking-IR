@@ -133,7 +133,7 @@ The datasets used to evaluate graph-based re-ranking across IR, QA, RAG, and spe
 
 ## 🎓 LEARNING PARADIGMS
 The learning paradigms used to develop graph-based re-rankers include supervised learning, ad-hoc methods, supervised fine-tuning, zero-shot, unsupervised, online, and weakly supervised learning.
-![Timeline](./assets/learning_paradigm.png)
+<p align="center"><img src="./assets/learning_paradigm.png" alt="Learning Paradigms" width="500"></p>
 
 ## ⭐ CITATION
 If you find this work helpful in your research, please consider citing our work.
